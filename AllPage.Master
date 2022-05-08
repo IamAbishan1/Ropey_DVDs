@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AllPage.Master.cs" Inherits="Ropey_DVDs.AllPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        &nbsp;<br />
+        <asp:Button ID="HomeB" runat="server" OnClick="HomeB_Click" Text="Ropey Home" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="DVDdetailsB" runat="server" OnClick="DVDdetailsB_Click" Text="DVD Details" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="manageLoanB" runat="server" OnClick="manageLoanB_Click" Text="Manage Loan" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="MemberDetailB" runat="server" OnClick="MemberDetailB_Click" style="height: 26px" Text="Member Details" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="ProfileB" runat="server" OnClick="ProfileB_Click" Text="Profile" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="logOutB" runat="server" OnClick="logOutB_Click" Text="Log Out" />
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                  </p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <p>
+        DopeyDVD - CopyRights@2022</p>
+</body>
+</html>
